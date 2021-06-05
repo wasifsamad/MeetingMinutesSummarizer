@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Meeting Minutes Summarizer</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shoelace-css/1.0.0-beta16/shoelace.css">
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+    <body>
+        
+        <div class="container">
+            
+            <p id="p1"><strong>MMS</strong></p>
+            <h1>Meeting Minutes Summarizer</h1>
+            <p class="page-description">An app that creates summary on your behalf, Let's create summaries on your behalf</p>
+
+            <h3 class="no-browser-support">Sorry, Your Browser Doesn't Support the Web Speech API. Try Opening This Demo In Google Chrome.</h3>
+
+            <div class="app"> 
+                <h3>New Meeting</h3>
+                <div class="input-single">
+                    <textarea id="note-textarea" placeholder="Create a new meeting by typing or using voice recognition." rows="6"></textarea>
+                </div>         
+                <button id="start-record-btn" title="Start Recording">Start Meeting</button>
+                <button id="pause-record-btn" title="Pause Recording">Stop Meeting</button>
+                <button id="save-note-btn" title="Save Note">Save Meeting</button>   
+                <p id="recording-instructions">Press the <strong>Start Meeting</strong> button and allow access.</p>
+<button>Summarize</button>
+<br><br><div>5 Sentence Summary</div><span></span>
+                <h3>My Meetings</h3>
+                <ul id="notes">
+                    <li>
+                        <p class="no-notes">You don't have any meetings.</p>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+        <script src="script2.js"></script>
+
+        <!-- Only used for the demos ads. Please ignore and remove. --> 
+        <script src="https://cdn.tutorialzine.com/misc/enhance/v3.js" async></script>
+
+    </body>
+</html>
+
+
